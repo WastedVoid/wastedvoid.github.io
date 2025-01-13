@@ -1,21 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Channel Name]</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>...it's quiet here...</h1>
-        <p>maybe you'll stay a while</p>
-        <ul class="links">
-            <li><a href="https://soundcloud.com/yourprofile" target="_blank">music to forget</a></li>
-            <li><a href="https://youtube.com/yourchannel" target="_blank">shattered visuals</a></li>
-            <li><a href="https://yourpage.bandcamp.com" target="_blank">torn tapes</a></li>
-            <li><a href="https://twitter.com/yourprofile" target="_blank">disconnected thoughts</a></li>
-        </ul>
-    </div>
-</body>
-</html>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", monospace;
+    background: black; /* Base color */
+    color: #d3d3d3;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #0a0a0a, #000);
+    z-index: -2;
+}
+
+::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    opacity: 0.1;
+    animation: glitch 0.1s infinite;
+    z-index: -1;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-5px, -2px);
+    }
+    50% {
+        transform: translate(5px, 2px);
+    }
+    75% {
+        transform: translate(-3px, 3px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
