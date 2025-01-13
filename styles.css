@@ -1,57 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Courier New", monospace;
-    background-color: #0a0a0a; /* Deep black background */
-    color: #d3d3d3; /* Muted gray text */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-}
-
-.container {
-    max-width: 500px;
-    border: 1px solid #333;
-    padding: 20px;
-    background: linear-gradient(to bottom, #1c1c1c, #0a0a0a);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-}
-
-h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #666;
-    text-transform: lowercase;
-}
-
-p {
-    font-style: italic;
-    margin-bottom: 20px;
-    color: #888;
-}
-
-.links {
-    list-style: none;
-    padding: 0;
-}
-
-.links li {
-    margin: 10px 0;
-}
-
-.links a {
-    text-decoration: none;
-    color: #b22222; /* Dark red */
-    font-weight: bold;
-    font-size: 1rem;
-    text-transform: uppercase;
-    transition: color 0.3s;
-}
-
-.links a:hover {
-    color: #ff6347; /* Softer red for hover */
-    text-shadow: 0 0 5px #ff6347;
+    font-family: 'Courier New', monospace; /* Matches the Lain aesthetic */
+    background: url('static-background.gif') center center / cover no-repeat;
+    background-attachment: fixed; /* Keeps it stationary when scrolling */
+    color: #d1d1d1; /* Muted gray text for a gloomy look */
+    overflow: hidden;
 }
