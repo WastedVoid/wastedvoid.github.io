@@ -1,2 +1,2 @@
 # wastedvoid.github.io
-It's.. Me.
+I hate everything, including myself. I feel useless.
